@@ -1,6 +1,14 @@
 <template>
   <div class="home-container">
-    后台主页
+<!--    //头部区域-->
+    <MyHeader></MyHeader>
+<!--    //页面主体-->
+    <div class="home-main-box">
+<!--      左侧边栏-->
+      <MyAside></MyAside>
+<!--      主体内容-->
+      <div class="home-main-body-">123</div>
+    </div>
   </div>
 </template>
 

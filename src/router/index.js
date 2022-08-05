@@ -13,5 +13,21 @@ const router = new VueRouter({
         {path:'/home',component:MyHome}
     ]
 })
+router.beforeEach(function (to,from,next){
+    //如果是登录页直接放行
+    if(to.path=='/'||to.path=='/login'){
+        next()
+    }
+    else {
+        const token=localStorage.getItem('token')
+        if(token){
+            next()
+        }
+        else {
+            next("/login")
+        }
+
+    }
+})
 export default router
 
