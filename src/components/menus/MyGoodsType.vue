@@ -28,6 +28,7 @@
               type="primary"
               @click="handleEdit(scope.row)">编辑</el-button>
           <el-button
+              v-if="scope.row.grade<3"
               size="mini"
               type="primary"
               @click="handleAddSub(scope.row)">新建子分类</el-button>
