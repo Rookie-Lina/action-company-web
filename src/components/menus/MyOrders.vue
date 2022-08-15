@@ -6,7 +6,7 @@
       <el-button @click="changePage(3,1)" type="success" >配送中</el-button>
       <el-button @click="changePage(4,2)" type="info" >已送达</el-button>
       <el-button @click="changePage(5,3)" type="warning" >已确认收货</el-button>
-      <el-button @click="changePage(6,4)" type="danger" >退款中</el-button>
+<!--      <el-button @click="changePage(6,4)" type="danger" >退款中</el-button>-->
     </el-row>
 <!--    未付款的订单-->
     <div v-if="nowPage==1">
