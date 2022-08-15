@@ -160,33 +160,33 @@
       </el-table>
     </div>
 <!--    退款中的订单-->
-    <div v-if="nowPage==6">
-      <h2>退款中的订单</h2>
-      <el-table
-                :data="result"
-                style="width: 100%">
-        <el-table-column
-            prop="id"
-            label="订单id"
-            width="180">
-        </el-table-column>
-        <el-table-column
-            prop="goodsName"
-            label="商品名称"
-            width="180">
-        </el-table-column>
-        <el-table-column
-            prop="createTime"
-            label="下单时间"
-            width="200  ">
-        </el-table-column>
-        <el-table-column
-            prop="orderRemarks"
-            label="订单备注"
-            width="180">
-        </el-table-column>
-      </el-table>
-    </div>
+<!--    <div v-if="nowPage==6">-->
+<!--      <h2>退款中的订单</h2>-->
+<!--      <el-table-->
+<!--                :data="result"-->
+<!--                style="width: 100%">-->
+<!--        <el-table-column-->
+<!--            prop="id"-->
+<!--            label="订单id"-->
+<!--            width="180">-->
+<!--        </el-table-column>-->
+<!--        <el-table-column-->
+<!--            prop="goodsName"-->
+<!--            label="商品名称"-->
+<!--            width="180">-->
+<!--        </el-table-column>-->
+<!--        <el-table-column-->
+<!--            prop="createTime"-->
+<!--            label="下单时间"-->
+<!--            width="200  ">-->
+<!--        </el-table-column>-->
+<!--        <el-table-column-->
+<!--            prop="orderRemarks"-->
+<!--            label="订单备注"-->
+<!--            width="180">-->
+<!--        </el-table-column>-->
+<!--      </el-table>-->
+<!--    </div>-->
     <el-pagination
         @size-change="handleSizeChange"
         @current-change="handleCurrentChange"
