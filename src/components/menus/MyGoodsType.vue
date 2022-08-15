@@ -59,7 +59,7 @@ export default {
       // 用户列表数据
       tableData: [],
       current:0,
-      pageSize:5,
+      pageSize:10,
       total:0,
       //添加子分类时用的临时容器
       temp:{
